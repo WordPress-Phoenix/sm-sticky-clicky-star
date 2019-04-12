@@ -1,5 +1,7 @@
 # WordPress SM Sticky Clicky Star
 
+[![CircleCI](https://circleci.com/gh/WordPress-Phoenix/sm-sticky-clicky-star.svg?style=svg)](https://circleci.com/gh/WordPress-Phoenix/sm-sticky-clicky-star)
+
 - Contributors: sethcarstens
 - Donate link: http://sethmatics.com/extend/plugins/sm-sticky-clicky-star/
 - Tags: sticky, post, page, plugin, ajax, admin
