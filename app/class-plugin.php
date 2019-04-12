@@ -2,7 +2,7 @@
 /**
  * Plugin Sticky_Clicky_Star
  *
- * @package WordPress
+ * @package    WordPress
  * @subpackage Sm_sticky_clicky_star
  */
 
