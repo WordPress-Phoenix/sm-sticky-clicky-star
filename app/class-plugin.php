@@ -82,4 +82,23 @@ class Plugin extends Abstract_Plugin {
 	protected function defines_and_globals() {
 	}
 
+	/**
+	 * Activate the plugin
+	 */
+	public static function activate() {
+		// get the "admin" role object and add capability
+		$role = get_role( 'administrator' );
+		$role->add_cap( 'edit_post_sticky' );
+	} // END public static function activate
+
+	/**
+	 * Deactivate the plugin
+	 */
+	public static function deactivate() {
+		global $wp_roles;
+		foreach ( array_keys( $wp_roles->roles ) as $role ) {
+			$wp_roles->remove_cap( $role, 'edit_post_sticky' );
+		}
+	} // END public static function deactivate
+
 } // END class Plugin

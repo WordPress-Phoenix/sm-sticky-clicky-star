@@ -1,19 +1,15 @@
-# WordPress SM Sticky Clicky Star
+=== SM Sticky Clicky Star ===
 
-- Contributors: sethcarstens
-- Donate link: http://sethmatics.com/extend/plugins/sm-sticky-clicky-star/
-- Tags: sticky, post, page, plugin, ajax, admin
+Contributors: sethcarstens
+Donate link: http://sethmatics.com/extend/plugins/sm-sticky-clicky-star/
+Tags: sticky, post, page, plugin, ajax, admin
+Requires at least: 5.1
+Tested up to: 5.1.1
+Stable tag: trunk
 
 Turn sticky (featured) posts on and off with 1 easy click! Control permissions with "User Role Editor" provided by http://sethmatics.com/.
 
-## UPDATING `/lib` files
-
-Lib files come from composer, but you need to ensure you run the command without the composer autoloader:
-```
-composer update --no-dev --no-autoloader
-```
-
-## Description
+== Description ==
 
 Turn sticky (featured) posts on and off with 1 easy click! Control permissions with "User Role Editor" provided by http://sethmatics.com/.
 
@@ -26,7 +22,7 @@ Features include:
 
 Don't forget to rate our plugin so we know how we are doing!
 
-## Installation
+== Installation ==
 
 To install the plugin manually:
 
@@ -36,7 +32,50 @@ To install the plugin manually:
 4. Visit the "posts" section from within /wp-admin/.
 5. Use the Sticky Clicky Stars to turn on and off the sticky attribute of the post.
 
-## Frequently Asked Questions
+== Changelog ==
+Version 1.1.3
+- Fix meta
+
+Version 1.1.2
+- Updated code for git sync + optimized code formatting
+
+Version 1.1.1
+- Checked working status with WordPress 4.2
+- Updated documentation and initialized plugin using git-svn
+- Testing git-svn revision 4
+
+Version 1.1.0
+
+- Corrected issue where style and javascript were loaded on all admin pages
+- Corrected notice when AppThemes themes were not activated
+- Converted entire plugin to use PHP Classes for extensibility
+
+Version 1.0.6
+
+- Corrected issue of all posts being made sticky.
+
+Version 1.0.5
+
+- Corrected custom post type losing sticky on save issue and minor admin styling issue.
+
+Version 1.0.4
+
+- Corrected custom post type sticky issue and removed sticky star from "page" post type editor.
+
+Version 1.0.2
+
+- Corrected issue where star click didn't work when blog was installed on subdirectory like domain.com/myblog/
+
+Version 1.0.1
+
+- First public version released, no changes yet.
+
+== Upgrade Notice ==
+Version 1.0.1
+
+Requires at least WordPress version 3.1.X
+
+== Frequently Asked Questions ==
 
 Q: How do I use the plugin?
 
@@ -50,6 +89,6 @@ Q: Where is the options panel?
 
 A: There is no options panel. The only changes you will see in the wp-admin is an additional column on the "posts" page that now has a Sticky Clicky Star.
 
-## Screenshots
-1. Sample of the "posts" page within wpin where a couple of the pages were marked as sticky.
-![screenshot-1](https://user-images.githubusercontent.com/1483300/56012206-53163d80-5ca0-11e9-8681-161237d9288c.png)
+== Screenshots ==
+
+1. Sample of the "posts" page within wp-admin where a couple of the pages were marked as sticky.
