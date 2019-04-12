@@ -22,7 +22,7 @@
  * License: GNU GPL v2.0+
  */
 
-defined( 'ABSPATH' ) or die(); // WordPress must exist.
+defined( 'ABSPATH' ) || die(); // WordPress must exist.
 
 $current_dir = trailingslashit( dirname( __FILE__ ) );
 
@@ -37,6 +37,6 @@ if ( ! class_exists( 'WPAZ_Plugin_Base\\V_2_6\\Abstract_Plugin' ) ) {
 /**
  * INTERNAL DEPENDENCIES (autoloader defined in main plugin class)
  */
-include_once $current_dir . 'app/class-plugin.php';
+require_once $current_dir . 'app/class-plugin.php';
 
 SM\Sticky_Clicky_Star\Plugin::run( __FILE__ );

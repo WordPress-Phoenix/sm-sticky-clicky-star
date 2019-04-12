@@ -86,7 +86,7 @@ class Plugin extends Abstract_Plugin {
 	 * Activate the plugin
 	 */
 	public static function activate() {
-		// get the "admin" role object and add capability
+		// get the "admin" role object and add capability.
 		$role = get_role( 'administrator' );
 		$role->add_cap( 'edit_post_sticky' );
 	} // END public static function activate
