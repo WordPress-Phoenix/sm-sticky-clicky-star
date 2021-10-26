@@ -4,7 +4,7 @@ Contributors: sethcarstens
 Donate link: http://sethmatics.com/extend/plugins/sm-sticky-clicky-star/
 Tags: sticky, post, page, plugin, ajax, admin
 Requires at least: 5.1
-Tested up to: 5.1.1
+Tested up to: 5.8.1
 Stable tag: trunk
 
 Turn sticky (featured) posts on and off with 1 easy click! Control permissions with "User Role Editor".
@@ -33,6 +33,9 @@ To install the plugin manually:
 5. Use the Sticky Clicky Stars to turn on and off the sticky attribute of the post.
 
 == Changelog ==
+Version 2.0.1
+- Fix issue storing post-ids as strings instead of ints
+
 Version 2.0.0
 - Refactor for APB (abstract plugin base)
 - Test with WP 5.1.1
